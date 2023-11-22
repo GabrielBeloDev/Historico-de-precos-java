@@ -6,7 +6,6 @@ import Model.Site;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
-import java.util.List;
 
 public class Operador {
     private Hashtable<String, Produto> produtos;
@@ -48,7 +47,7 @@ public class Operador {
         return menorPrecoData;
     }
 
-    public List<PrecoData> historicoPrecoProduto(String nomeProduto) {
+    public ArrayList<PrecoData> historicoPrecoProduto(String nomeProduto) {
         Produto produto = produtos.get(nomeProduto);
         if (produto == null) {
             return null;

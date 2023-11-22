@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Site {
     private String nome;
-    private List<PrecoData> precoDatas;
+    private ArrayList<PrecoData> precoDatas;
 
     public Site(String nome) {
         this.nome = nome;
@@ -16,7 +16,7 @@ public class Site {
         return nome;
     }
 
-    public List<PrecoData> getPrecoDatas() {
+    public ArrayList<PrecoData> getPrecoDatas() {
         return precoDatas;
     }
 }

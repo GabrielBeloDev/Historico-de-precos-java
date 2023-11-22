@@ -3,7 +3,7 @@ package View;
 import Controller.Operador;
 import Model.PrecoData;
 
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -76,11 +76,12 @@ public class Main {
     }
 
 
+
     private void exibirHistoricoPrecos() {
         System.out.print("Nome do Produto: ");
         String nomeProduto = scanner.nextLine();
 
-        List<PrecoData> historicoPrecos = operador.historicoPrecoProduto(nomeProduto);
+        ArrayList<PrecoData> historicoPrecos = operador.historicoPrecoProduto(nomeProduto);
         if (historicoPrecos != null && !historicoPrecos.isEmpty()) {
             System.out.println("Histórico de preços:");
             for (PrecoData pd : historicoPrecos) {
