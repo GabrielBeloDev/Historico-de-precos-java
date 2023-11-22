@@ -3,7 +3,6 @@ package View;
 import Controller.Operador;
 import Model.PrecoData;
 
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.Scanner;
 
@@ -15,7 +14,6 @@ public class Main {
         this.operador = new Operador();
         this.scanner = new Scanner(System.in);
     }
- // Consumir a quebra de linha
 
     public void iniciar() {
         while (true) {

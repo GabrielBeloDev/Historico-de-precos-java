@@ -33,7 +33,9 @@ public class Operador {
 
     public PrecoData menorPrecoProduto(String nomeProduto) {
         Produto produto = produtos.get(nomeProduto);
-        if (produto == null) return null;
+        if (produto == null) {
+            return null;
+        }
 
         PrecoData menorPrecoData = null;
         for (Site site : produto.getSites().values()) {
@@ -48,9 +50,11 @@ public class Operador {
 
     public List<PrecoData> historicoPrecoProduto(String nomeProduto) {
         Produto produto = produtos.get(nomeProduto);
-        if (produto == null) return null;
+        if (produto == null) {
+            return null;
+        }
 
-        List<PrecoData> historico = new ArrayList<>();
+        ArrayList<PrecoData> historico = new ArrayList<>();
         for (Site site : produto.getSites().values()) {
             historico.addAll(site.getPrecoDatas());
         }
